@@ -1,0 +1,60 @@
+Pizza.java
+=============================
+
+package com.pizzamanagement.model;
+
+public class Pizza {
+	
+	private int pizzaNo;
+	private String pizzaType;
+	private int pizzaPrice;
+	private String DeliveryAdd;
+	
+	public Pizza() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Pizza(int pizzaNo, String pizzaType, int pizzaPrice, String deliveryAdd) {
+		super();
+		this.pizzaNo = pizzaNo;
+		this.pizzaType = pizzaType;
+		this.pizzaPrice = pizzaPrice;
+		DeliveryAdd = deliveryAdd;
+	}
+
+	@Override
+	public String toString() {
+		return "Pizza [pizzaNo=" + pizzaNo + ", pizzaType=" + pizzaType + ", pizzaPrice=" + pizzaPrice
+				+ ", DeliveryAdd=" + DeliveryAdd + "]";
+	}
+	
+	
+}
+
+PizzaService.java
+===============================
+
+package com.pizzamanagement.service;
+
+import java.util.Map.Entry;
+
+import com.pizzamanagement.model.Pizza;
+
+public interface PizzaService {
+	
+	int addPizza(Pizza pizza);
+	
+	Pizza updatePizza(int pizzaNo , Pizza pizza);
+	
+	void deletePizza(int pizzaNo);
+	
+	Pizza findPizzaByNo(int pizzaNo);
+	
+}
+
+PizzaServiceImpl.java
+===============================
+
+
+
+
