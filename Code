@@ -58,3 +58,23 @@ PizzaServiceImpl.java
 
 
 
+PizzaDao.java
+==========================
+
+package com.pizzamanagement.Dao;
+
+import java.util.Set;
+
+import com.pizzamanagement.model.Pizza;
+
+public interface PizzaDao {
+	
+int addPizza(Pizza pizza);
+	
+	Pizza updatePizza(int pizzaNo , Pizza pizza);
+	
+	void deletePizza(int pizzaNo);
+	
+	Pizza getPizzaByNo(int pizzaNo);
+	
+	}
